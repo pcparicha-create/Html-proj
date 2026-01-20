@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <H1>Calculator</H1>
+        <p>200</p><br><br>
+        <p>67</p>
+        <button id="add" onclick="add()">+</button>
+        <button id="addit" onclick="sub()">-</button>
+        <button id="mult" onclick="mult()">*</button>
+        <button id="divis" onclick="div()">/</button><br><br>
+        <label id="res"></label>
+
+        <script>
+            function add() {
+                var ans= a+b
+                document.getElementById("res").innerText="The sum of this is:" + ans
+            }
+            function sub() {
+                var ans= a-b
+                document.getElementById("res").innerText="The difference of this is:" + ans
+            }
+            function mult() {
+                var ans= a*b
+                document.getElementById("res").innerText="The product of this is:" + ans
+            }
+            function div() {
+                var ans= a/b
+                document.getElementById("res").innerText="The quotient of this is:" + ans
+            }
+            var a = 200
+            var b = 67
+            
+            
+        </script>
+
+    </body>
+</html>
