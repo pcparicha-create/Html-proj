@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions in JS</title>
+    </head>
+    <body>
+        <button onclick="respond()">see</button>
+        <button onclick="llclick()">click</button>
+        <p id="demo"></p><br>
+        <p id="demo1"></p><br>
+        <p id="demo2"></p>
+
+        <script>
+            function respond(x=67,y) {
+                if (y === undefined){
+                    y=6;
+                }
+                
+                document.write(x+y)
+            }
+            var a= 670;
+            function llclick() {
+                 var b= 42;
+                document.write(b+a);
+            }
+            document.getElementById("demo1").innerText= b;
+            document.getElementById("demo2").innerText= a;
+
+            var ans= function(x,y){return x/y};
+            document.write(4,2);
+        </script>
+    </body>
+</html>
