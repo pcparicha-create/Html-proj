@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiply</title>
+    </head>
+    <body>
+        <h1>Multiply</h1>
+        <input type="numbers" id="n1"><br><br>
+        <input type="numbers" id="n2"><br><br>
+        <button id="rebuttoned" onclick="resbutton()">Click </button>
+        <label id="res">smthg</label>
+
+        <script>
+            function resbutton(a,b){
+                a=document.getElementById("n1").value
+                b=document.getElementById("n2").value             
+            }
+            var sum= a*b
+            document.getElementById("res").innerHTML= "The result is " + sum
+           
+        </script>
+    </body>
+</html>
