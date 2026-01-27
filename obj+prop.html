@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Object Properties
+    </title>
+    </head>
+    <body>
+        <h1>Object Properties</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            var car = {type:"Hyundei", model:"i20", color:"red"};
+            document.getElementById("demo").innerHTML = "I have a " + car.type + " " + car.model + " in the colour " + car.color + ".";
+
+            var value = Math.abs(-4.7);
+            document.write("ans = " + value) ;
+"<br>";
+            var value2 = Math.acos(1);
+            document.write("ans = " + value2) ;
+            "<br>";
+
+            var value3 = Math.asin(1);
+            document.write("ans = " + value3) ;
+"<br>";
+            var value4 = Math.atan(6.7);
+            document.write("ans = " + value4) ;
+
+            function findMax() {
+                var i;
+                var max= 0;
+                for (i = 0; i < arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i];
+                    }
+                
+                }
+                return max;
+            }
+
+            document.getElementById("demo1").innerHTML = findMax(67,68,69,70,71,72,73,74,75,76,77);
+        </script>
+    </body>
+</html>
