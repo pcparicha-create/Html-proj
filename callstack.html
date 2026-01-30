@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>call stack</title>
+    </head>
+    <body>
+        <h1>call stack</h1>
+        <p id="demo"></p>
+
+        <script>
+            function add(a, b) {
+                return a + b;
+            }
+
+            function average(a, b) {
+                return (a + b) / 2;
+            }
+
+            let result = average(5, 10);
+            document.getElementById("demo").innerHTML = "The average of 5 and 10 is: " + result;
+
+            firstFunction();
+        </script>
+    </body>
