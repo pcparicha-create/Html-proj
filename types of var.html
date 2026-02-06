@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Types of Variables in JavaScript</h1>
+        <button onclick="timed()">Greeting</button>
+        <p id="greet"></p><br><br>
+        <p id="hour"></p>
+        <p id="loop"></p>
+
+        <script>
+
+            var a= 4;
+            var b= 6.7;
+            var c= 6.7;
+            var d= null;
+            var e;
+            document.write("a and b are equal " + (a==b) + "<br>");
+            document.write("b and c are equal " + (b==c) + "<br>");
+            document.write("d is null " + d + "<br>");
+            document.write("e is undefined " + e + "<br>");
+            function timed(){
+                var greeting;
+                var hour = new Date().getHours();
+                document.getElementById("hour").innerHTML = "the current hour is " + hour;
+                if(hour < 12){
+                    document.getElementById("greet").innerHTML = "Good Morning!";
+                }
+                else if(hour < 18){
+                    document.getElementById("greet").innerHTML = "Good Afternoon!";
+                }
+                else{
+                    document.getElementById("greet").innerHTML = "Good Evening!";
+                }
+            }
+
+            var i= 0;
+            var text = "";
+            while(i < 15){
+                text += "The number is " + i + "<br>";
+                i++;
+            }
+            document.getElementById("loop").innerHTML = text;
+        </script>
+    </body>
+</html>
