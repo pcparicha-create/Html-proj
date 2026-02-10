@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class in JS</title>
+
+    </head>
+    <body>
+        
+        <h1>Class in JavaScript</h1>
+        <p id="pradyumna"></p>
+        <p id="purna"></p>
+        <p id="hello"></p>
+        <p id="hi"></p>
+        <p id="welcome"></p>
+        <script>
+
+            class Person {
+                constructor(name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
+            
+            age(){
+                let currentYear = new Date().getFullYear();
+                return currentYear - this.year;
+            }
+        }
+            const pradyumna = new Person("Pradyumna", 2014);
+            document.getElementById("pradyumna").innerHTML = "My name is " + pradyumna.name + " and my age is " + pradyumna.age() + " years old. I was born in " + pradyumna.year + ".";
+               
+            const Purna = new Person("Purna", 1980);
+            document.getElementById("purna").innerHTML = "My name is " + Purna.name + " and my age is " + Purna.age() + " years old. I was born in " + Purna.year + ".";
+
+
+            class Student {
+                constructor(name){
+                    this.sname = name;
+                }
+                static hello(){
+                    return "Hello!!!";
+                }
+
+                static welcome(x){
+                    return "Welcome " + x.sname;
+                }
+                static hi(x){
+                    return "Hi " + x.sname;
+                }
+
+            }
+
+            document.getElementById("hello").innerHTML = Student.hello();
+            document.getElementById("welcome").innerHTML = Student.welcome(new Student("Pradyumna"));
+            document.getElementById("hi").innerHTML = Student.hi(new Student("Pradyumna"));
+        </script>
+    </body>
+</html>

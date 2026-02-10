@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Extend Class
+        </title>
+    </head>
+    <body>
+        <p id="details"></p>
+
+        <script>
+            class car {
+                constructor(brand) {
+                    this.brand = brand;
+                    
+                }
+                present() {
+                    return "I have a " + this.brand;
+                }
+
+            }
+
+                class model extends car {
+                    constructor(brand, model) {
+                        super(brand);
+                        this.model = model;
+                    }
+                    show() {
+                        return this.present() + ", it is a " + this.model + ".";
+                    }
+                }
+                let mycar = new model("Buggati", "Chiron");
+                document.getElementById("details").innerHTML = mycar.show();
+            
+        </script>
+    </body>
+</html>
