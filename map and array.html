@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Multiply every element in the array with 67:</p>
+
+<p id="prodval"></p>
+
+<script>
+var numbers = [7, 56, 67, 5666, 74568];
+
+function myFunction(num) {
+    return num * 5;
+}
+
+var mapper = numbers.map(myFunction) + "<br>";
+
+document.getElementById("prodval").innerHTML = mapper;
+</script>
+
+</body>
+</html>
