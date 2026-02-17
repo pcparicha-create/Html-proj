@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Arrow Function Example</h3>
+
+<button onclick="showAnswer()">Click to Add 8 + 67</button>
+
+<p id="result"></p>
+
+<script>
+// Your syntax
+var ADD = (A, B) => A + B;
+
+function showAnswer() {
+    let answer = ADD(8,67);
+    document.getElementById("result").innerHTML = answer;
+}
+</script>
+
+</body>
+</html>

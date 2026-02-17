@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript String() Method</h2>
+
+<p>The String() method can convert a number to a string.</p>
+
+<p id="number_result"></p>
+<p id="string_result"></p><br><br><br>
+<p id="catch"></p>
+
+<script>
+var x = 140;
+var y = 670;
+
+document.getElementById("number_result").innerHTML = x + y;
+
+document.getElementById("string_result").innerHTML = String(x)  + String(y);
+
+try {
+    addalert("hey thats a great coder")
+}
+catch(err) {
+    document.getElementById("catch").innerHTML = err.message;
+    alert(err.message);
+}
+</script>
+
+</body>
+</html>
