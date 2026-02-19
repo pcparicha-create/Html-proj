@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON. Async/await</h2>
+
+<p id="result"></p>
+<h3 id="res"></h3>
+
+<script>
+var Obj = { name: "Prad", age: 12, grade: 6 };
+
+var myJSON = JSON.stringify(Obj); // converts object to JSON for sending data
+
+var newObj = JSON.parse(myJSON); // converts JSON into object while receiving data
+
+document.getElementById("result").innerHTML = newObj.name + "<br>"+ newObj.age;
+
+async function add(x,y) {
+    let response = await x+y;
+    displayy(response);
+}
+function displayy(smthg){
+    document.getElementById("res").innerHTML = smthg;
+}
+add(8,67);
+
+
+</script>
+
+</body>
+</html>
