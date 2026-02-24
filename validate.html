@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <form name="myForm" onsubmit="return validateForm()">
+    Name:
+    <input type="text" name="fname">
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="message"></p><br><br><br><br>
+
+  <input type="number" id="fr" min="250" max="500" placeholder="Enter a number between 250 and 500">
+    <button onclick="checks()">Validate Number</button>
+
+  <p id="result"></p>
+
+
+
+
+  <script>
+    
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+
+      if (x === "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      return true;
+    }
+
+    function checks() {
+        var mun= document.getElementById("fr");
+        if (!mun.checkValidity()) {
+            document.getElementById("result").innerHTML = mun.validationMessage;
+        } else {
+            document.getElementById("result").innerHTML = "Valid number: " + mun.value;
+        }
+
+    }
+
+
+  
+  </script>
+
+</body>
+</html>
