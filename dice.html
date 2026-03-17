@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Roller</title>
+    </head>
+    <body>
+        <h1>Dice Roller</h1>
+        <button onclick="rollDice()">Roll Dice</button>
+        <h1 id="result"></h1>
+        <img id="dice" src="dice1.png" width="100">
+
+        <script>
+          function rollDice() {
+             let images = [
+    "dice1.webp",
+    "dice2.webp",
+    "dice3.webp",
+    "dice4.webp",
+    "dice5.webp",
+    "dice6.webp"
+  ];
+
+             let num= Math.floor(Math.random() * 6) + 1;
+            document.getElementById("dice").src = images[num-1];
+          }
+
+        </script>
+    </body>
+</html>
